@@ -1126,6 +1126,7 @@ int main() {
 
 	try {
 		app.run();
+		std::cout << "This does work" << std::endl;
 	}
 	catch (const std::exception& e) {
 		std::cerr << e.what() << std::endl;
