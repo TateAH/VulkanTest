@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shaders\shader.frag">
+    <None Include="src\shaders\shader.frag">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="shaders\shader.vert">
+    <None Include="src\shaders\shader.vert">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
@@ -26,5 +26,16 @@
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="vkpch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vkpch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanTest\Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

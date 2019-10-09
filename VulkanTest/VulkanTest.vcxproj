@@ -70,20 +70,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)Bin\</OutDir>
-    <IntDir>$(Configuration)IntBin\</IntDir>
+    <OutDir>..\bin\Debug-windows-x86_64\VulkanTest\</OutDir>
+    <IntDir>..\bin-int\debug-windows-x86_64\VulkanTest\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)Bin\</OutDir>
-    <IntDir>$(Configuration)IntBin\</IntDir>
+    <OutDir>..\bin\Release-windows-x86_64\VulkanTest\</OutDir>
+    <IntDir>..\bin-int\Release-windows-x86_64\VulkanTest\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)$(Configuration)Bin\</OutDir>
-    <IntDir>$(Configuration)IntBin\</IntDir>
+    <OutDir>..\bin\Debug-windows-x86_64\VulkanTest\</OutDir>
+    <IntDir>..\bin-int\debug-windows-x86_64\VulkanTest\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)$(Configuration)Bin\</OutDir>
-    <IntDir>$(Configuration)IntBin\</IntDir>
+    <OutDir>..\bin\Release-windows-x86_64\VulkanTest\</OutDir>
+    <IntDir>..\bin-int\Release-windows-x86_64\VulkanTest\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -155,10 +155,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="vkpch.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="shaders\shader.frag" />
-    <None Include="shaders\shader.vert" />
+    <None Include="src\shaders\shader.frag" />
+    <None Include="src\shaders\shader.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\VulkanTest\Core.h" />
+    <ClInclude Include="vkpch.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
